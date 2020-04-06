@@ -2,6 +2,8 @@ qKontrol is a Linux / macOS application to configure Native Instruments Komplete
 
 With this software it is possible to configure MIDI CCs assigned to all knobs, buttons, sliders, wheels and pedals, to split the keyboard into zones and to display assignments, CC values and custom images on the two displays. Furthermore, it offers a possibility to communicate with Bitwig Studio (incl. the Linux version) and maybe other DAWs the start and stop playback and recording, to turn on and of looping and the metronome and to fetch and display information about the currently selected track and plugin names as well as the song position.
 
+![Device LCDs](https://raw.githubusercontent.com/GoaSkin/qKontrol/master/images/lcd.png)
+
 qKontrol is an open 3rd party application. It does not depend on any drivers or software provided by Native Instruments
 and comes with it's completely own codebase.
 
