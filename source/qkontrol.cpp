@@ -384,6 +384,12 @@ void qkontrolWindow::updateValues()
 		}
 	if((res == 32) && (DATA_IN[0]==char(0x01)))
 		{
+		// if the button values are still the same, no other button has been pushed. Therefore: ignore
+		if(DATA_IN.left(5) == oldButtonArray)
+			return;
+		else
+			oldButtonArray = DATA_IN.left(5);
+
 		if((DATA_IN[2]==char(0x10)) && (oscEnabled == true)) // play 
 			udpSocket->writeDatagram(QByteArray::fromHex("2f706c6179002c6900000000"),QHostAddress(hostname),remotePort);
 		if((DATA_IN[2]==char(0x20)) && (oscEnabled == true)) // loop
@@ -410,9 +416,10 @@ void qkontrolWindow::updateValues()
 		if((DATA_IN[3]==char(0x20)) && kontrolPage < 3)
 			setKontrolpage(kontrolPage+1);
 		if(DATA_IN[4]==char(0x01))
-			qDebug() << "M";
+			udpSocket->writeDatagram(QByteArray::fromHex("2f747261636b2f73656c65637465642f6d75746500000000002c6900000000"),QHostAddress(hostname),remotePort); // mute
 		if(DATA_IN[4]==char(0x02))
-			qDebug() << "S";
+			udpSocket->writeDatagram(QByteArray::fromHex("2f747261636b2f73656c65637465642f736f6c6f00000000002c6900000000"),QHostAddress(hostname),remotePort); // solo
+// qDebug() << DATA_IN.toHex();
 		}
 }
 
@@ -1036,6 +1043,20 @@ void qkontrolWindow::updateBacklights()
 		lightArray.replace(26,1,QByteArray::fromHex("21"));
 	if(datagram.toHex().contains("2f636c69636b00002c69000000000001")) // metronome on
 		lightArray.replace(26,1,QByteArray::fromHex("FF"));
+	if(datagram.contains("/track/selected/mute"))
+		{
+		if(QString(datagram.replace(0x00,0x20)).split("/track/selected/mute")[1].split(",i")[1].at(5) == " ")
+			lightArray.replace(1,1,QByteArray::fromHex("04"));
+		else
+			lightArray.replace(1,1,QByteArray::fromHex("06"));
+		}
+	if(datagram.contains("/track/selected/solo"))
+		{
+		if(QString(datagram.replace(0x00,0x20)).split("/track/selected/solo")[1].split(",i")[1].at(5) == " ")
+			lightArray.replace(2,1,QByteArray::fromHex("10"));
+		else
+			lightArray.replace(2,1,QByteArray::fromHex("12"));
+		}
 	setButtons();
 	if(datagram.contains("/track/selected/name"))
 		{
@@ -1313,7 +1334,9 @@ void qkontrolWindow::oscConfig()
 
 	if(oscEnabled==true)
 		{
-		// enable loop, metro, play, stop and record buttons
+		// enable mute, solo, loop, metro, play, stop and record buttons
+		lightArray.replace(1,1,QByteArray::fromHex("04"));
+		lightArray.replace(2,1,QByteArray::fromHex("10"));
 //		lightArray.replace(15,1,QByteArray::fromHex("21")); // shift
 		lightArray.replace(25,1,QByteArray::fromHex("21"));
 		lightArray.replace(26,1,QByteArray::fromHex("21"));
@@ -1330,7 +1353,9 @@ void qkontrolWindow::oscConfig()
 		}
 	else
 		{	
-		// disable loop, metro, play, stop and record buttons
+		// disable mute, solo, loop, metro, play, stop and record buttons
+		lightArray.replace(1,1,QByteArray::fromHex("00"));
+		lightArray.replace(2,1,QByteArray::fromHex("00"));
 		lightArray.replace(15,1,QByteArray::fromHex("00"));
 		lightArray.replace(25,1,QByteArray::fromHex("00"));
 		lightArray.replace(26,1,QByteArray::fromHex("00"));

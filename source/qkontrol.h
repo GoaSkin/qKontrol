@@ -30,6 +30,7 @@ class qkontrolWindow : public QMainWindow , protected Ui_mainwindow
 		unsigned int bPage, kPage, kontrolPage, dirCount, dirPosition;
 		hid_device *handle; // USB HID socket
 		QByteArray lightArray, knobsButtons;
+		QByteArray oldButtonArray;
 		QMap<QString,QColor> allColors; // array containing all color settings
 		QTemporaryFile leftScreen, rightScreen; // image files to be displayed on the screens
 		QTimer *hid_data;
