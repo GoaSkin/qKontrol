@@ -1,0 +1,3 @@
+ATTRS{idVendor}=="17cc", ATTRS{idProduct}=="1610", ACTION=="add", MODE="0777", RUN="/bin/sh -c 'echo -n $id:1.2 > /sys/bus/usb/drivers/usbhid/unbind'"
+ATTRS{idVendor}=="17cc", ATTRS{idProduct}=="1620", ACTION=="add", MODE="0777", RUN="/bin/sh -c 'echo -n $id:1.2 > /sys/bus/usb/drivers/usbhid/unbind'"
+ATTRS{idVendor}=="17cc", ATTRS{idProduct}=="1630", ACTION=="add", MODE="0777", RUN="/bin/sh -c 'echo -n $id:1.2 > /sys/bus/usb/drivers/usbhid/unbind'"
