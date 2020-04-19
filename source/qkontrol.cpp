@@ -131,8 +131,9 @@ qkontrolWindow::qkontrolWindow(QWidget* parent /* = 0 */, Qt::WindowFlags flags 
 	trackname = "";
 	devicename = "";
 
-	// start in midi mode
+	// start in midi mode and create empty parameter array
 	pluginMode = false;
+	paramName = QStringList() << NULL << NULL << NULL << NULL << NULL << NULL << NULL << NULL;
 
 	// make the switch / continous tab bars (pedals) invisible
 	tabWidget_pedal1->findChild<QTabBar *>()->hide();
@@ -381,14 +382,23 @@ void qkontrolWindow::updateValues()
 				}
 		knobPainter->end();
 		knobsButtons = DATA_IN;
+
+	// send values via OSC if the controller is in plugin mode
+	if(pluginMode == true)
+		{
+		for(int i=0;i<=7;i++)
+			udpSocket->writeDatagram(QByteArray("/device/param/"+QString::number(i+1).toUtf8()+"/value")+QByteArray::fromHex("0000002c690000000000")+DATA_IN[17+i*2], QHostAddress(hostname),remotePort);
+		}
+
+	// qDebug() << DATA_IN.toHex();
 		}
 	if((res == 32) && (DATA_IN[0]==char(0x01)))
 		{
 		// if the button values are still the same, no other button has been pushed. Therefore: ignore
-		if(DATA_IN.left(5) == oldButtonArray)
+		if(DATA_IN.left(6) == oldButtonArray)
 			return;
 		else
-			oldButtonArray = DATA_IN.left(5);
+			oldButtonArray = DATA_IN.left(6);
 
 		if((DATA_IN[2]==char(0x10)) && (oscEnabled == true)) // play 
 			udpSocket->writeDatagram(QByteArray::fromHex("2f706c6179002c6900000000"),QHostAddress(hostname),remotePort);
@@ -411,15 +421,45 @@ void qkontrolWindow::updateValues()
 			zapPreset(0);
 		if(DATA_IN[3]==char(0x40)) // preset down
 			zapPreset(1);
-		if((DATA_IN[3]==char(0x80)) && kontrolPage > 0)
-			setKontrolpage(kontrolPage-1);
-		if((DATA_IN[3]==char(0x20)) && kontrolPage < 3)
-			setKontrolpage(kontrolPage+1);
+
+		if(pluginMode == true) // use > and < buttons in MIDI mode to toggle parameter pages and in plugin mode to toggle plugins in track
+			{
+			if(DATA_IN[3]==char(0x80))
+				udpSocket->writeDatagram(QByteArray::fromHex("2f6465766963652f2d00000000000000"),QHostAddress(hostname),remotePort);
+			if(DATA_IN[3]==char(0x20))
+				udpSocket->writeDatagram(QByteArray::fromHex("2f6465766963652f2b00000000000000"),QHostAddress(hostname),remotePort);
+			}
+		else
+			{
+			if((DATA_IN[3]==char(0x80)) && kontrolPage > 0)
+				setKontrolpage(kontrolPage-1);
+			if((DATA_IN[3]==char(0x20)) && kontrolPage < 3)
+				setKontrolpage(kontrolPage+1);
+			}
+
 		if(DATA_IN[4]==char(0x01))
 			udpSocket->writeDatagram(QByteArray::fromHex("2f747261636b2f73656c65637465642f6d75746500000000002c6900000000"),QHostAddress(hostname),remotePort); // mute
 		if(DATA_IN[4]==char(0x02))
 			udpSocket->writeDatagram(QByteArray::fromHex("2f747261636b2f73656c65637465642f736f6c6f00000000002c6900000000"),QHostAddress(hostname),remotePort); // solo
-// qDebug() << DATA_IN.toHex();
+		if(DATA_IN[5]==char(0x02)) // plug-in
+			{
+			pluginMode = true;
+	                lightArray.replace(33,1,QByteArray::fromHex("20"));
+			lightArray.replace(34,1,QByteArray::fromHex("20"));
+			lightArray.replace(37,1,QByteArray::fromHex("FF"));
+			lightArray.replace(40,1,QByteArray::fromHex("20"));
+			udpSocket->writeDatagram(QByteArray::fromHex("2f7265667265736800010000002c6900000000"),QHostAddress(hostname),remotePort); // refresh
+			setButtons();
+			setKeyzones();
+			}
+		if(DATA_IN[5]==char(0x20)) // midi
+			{
+			pluginMode = false;
+        	        lightArray.replace(37,1,QByteArray::fromHex("20"));
+	                lightArray.replace(40,1,QByteArray::fromHex("FF"));
+			setKontrolpage(kontrolPage);
+			}			
+//     	qDebug() << DATA_IN.toHex();
 		}
 }
 
@@ -564,7 +604,9 @@ void qkontrolWindow::setKeyzones()
 
 	if(pluginMode == true) // in plugin mode, we need to set some bytes to zero again to avoid MIDI
 		{
-		for(unsigned int i=1;i<=193;i+=12)
+		for(unsigned int i=1;i<=181;i+=12) // avoid midi if the knobs are moved or buttons pushed
+			knobsAndButtons.replace(i,1,QByteArray::fromHex("08"));
+		for(unsigned int i=188;i<=200;i++) // turn off the backlight of all buttons
 			knobsAndButtons.replace(i,1,QByteArray::fromHex("00"));
 		}
 	
@@ -848,6 +890,7 @@ void qkontrolWindow::setKeyzones()
 		image1->drawImage(0, 65, QImage(graphicsViewScreen1->currentFile).scaled(480, 140));
 	if(QFile::exists(graphicsViewScreen2->currentFile))
 		image2->drawImage(0, 65, QImage(graphicsViewScreen2->currentFile).scaled(480, 140));
+
 	if(p_ScreenCC->currentIndex() == 1)
 		{
 		image1->setFont(QFont("Arial", 16, QFont::Bold));
@@ -855,7 +898,8 @@ void qkontrolWindow::setKeyzones()
 		image1->drawText(QPoint(30,110), sliderFunctionList[0]);
 		image1->drawText(QPoint(30,140), sliderFunctionList[1]);
 		image1->drawText(QPoint(30,170), sliderFunctionList[2]);
-		image1->drawText(QPoint(370, 140), "page "+QString::number(kontrolPage+1)+"/4");
+		if(pluginMode == false)
+			image1->drawText(QPoint(370, 140), "page "+QString::number(kontrolPage+1)+"/4");
 		}
 	if(p_ScreenCC->currentIndex() == 2)
 		{
@@ -864,7 +908,8 @@ void qkontrolWindow::setKeyzones()
 		image2->drawText(QPoint(30,110), sliderFunctionList[0]);
 		image2->drawText(QPoint(30,140), sliderFunctionList[1]);
 		image2->drawText(QPoint(30,170), sliderFunctionList[2]);
-		image2->drawText(QPoint(370, 140), "page "+QString::number(kontrolPage+1)+"/4");
+		if(pluginMode == false)
+			image2->drawText(QPoint(370, 140), "page "+QString::number(kontrolPage+1)+"/4");
 		}
 
 	image1->setFont(QFont("Arial", 13, QFont::Bold));
@@ -877,24 +922,36 @@ void qkontrolWindow::setKeyzones()
 	
 	for(int i=0;i<=7;i++)
 		{
-		switch(findChild<QComboBox *>("b_mode_"+QString::number(8*kontrolPage+i+1))->currentIndex())
+		if(pluginMode == false)
 			{
-			case 0: image[floor(i/4)]->drawText(QRect(y[i], 10, 100, 27), Qt::AlignCenter, "OFF"); break;
-			case 4: image[floor(i/4)]->drawText(QRect(y[i], 10, 100, 27), Qt::AlignCenter, "PRG "+QString::number(findChild<QSpinBox *>("b_CC_"+QString::number(8*kontrolPage+i+1))->value())); break;
-			default: image[floor(i/4)]->drawText(QRect(y[i], 10, 100, 27), Qt::AlignCenter, "CC "+QString::number(findChild<QSpinBox *>("b_CC_"+QString::number(8*kontrolPage+i+1))->value())); break;
+			switch(findChild<QComboBox *>("b_mode_"+QString::number(8*kontrolPage+i+1))->currentIndex())
+				{
+				case 0: image[floor(i/4)]->drawText(QRect(y[i], 10, 100, 27), Qt::AlignCenter, "OFF"); break;
+				case 4: image[floor(i/4)]->drawText(QRect(y[i], 10, 100, 27), Qt::AlignCenter, "PRG "+QString::number(findChild<QSpinBox *>("b_CC_"+QString::number(8*kontrolPage+i+1))->value())); break;
+				default: image[floor(i/4)]->drawText(QRect(y[i], 10, 100, 27), Qt::AlignCenter, "CC "+QString::number(findChild<QSpinBox *>("b_CC_"+QString::number(8*kontrolPage+i+1))->value())); break;
+				}
 			}
+		else
+			image[floor(i/4)]->drawText(QRect(y[i], 10, 100, 27), Qt::AlignCenter, "OFF");
 		}
 
 	image1->setFont(QFont("Arial", 10));
 	image2->setFont(QFont("Arial", 10));
 
 	for(int i=0;i<=7;i++)
-		switch(findChild<QComboBox *>("k_mode_"+QString::number(8*kontrolPage+i+1))->currentIndex())
+		{
+		if(pluginMode == false)
 			{
-			case 0: image[floor(i/4)]->drawText(QPoint(y[i], 245), "OFF"); break;
-			case 1: image[floor(i/4)]->drawText(QPoint(y[i], 245), "PRESET"); break;
-			default: image[floor(i/4)]->drawText(QPoint(y[i], 245), "CC "+QString::number(findChild<QSpinBox *>("k_CC_"+QString::number(8*kontrolPage+i+1))->value())); break;
+			switch(findChild<QComboBox *>("k_mode_"+QString::number(8*kontrolPage+i+1))->currentIndex())
+				{
+				case 0: image[floor(i/4)]->drawText(QPoint(y[i], 245), "OFF"); break;
+				case 1: image[floor(i/4)]->drawText(QPoint(y[i], 245), "PRESET"); break;
+				default: image[floor(i/4)]->drawText(QPoint(y[i], 245), "CC "+QString::number(findChild<QSpinBox *>("k_CC_"+QString::number(8*kontrolPage+i+1))->value())); break;
+				}
 			}
+		else
+			image[floor(i/4)]->drawText(QPoint(y[i], 245), "RC "+QString::number(i+1));
+		}
 
 	image1->setFont(QFont("Arial", 9));
 	image2->setFont(QFont("Arial", 9));
@@ -905,8 +962,13 @@ void qkontrolWindow::setKeyzones()
 	for(int i=0;i<=7;i++)
 		{
 		if(findChild<QComboBox *>("k_mode_"+QString::number(8*kontrolPage+i+1))->currentIndex() == 2)
-			image[floor(i/4)]->drawText(QPoint(y[i], 263), findChild<QLineEdit *>("k_description_"+QString::number(8*kontrolPage+i+1))->text());
-		if(findChild<QComboBox *>("b_mode_"+QString::number(8*kontrolPage+i+1))->currentIndex() != 0)
+			{
+			if(pluginMode == false)
+				image[floor(i/4)]->drawText(QPoint(y[i], 263), findChild<QLineEdit *>("k_description_"+QString::number(8*kontrolPage+i+1))->text());
+			else
+				image[floor(i/4)]->drawText(QPoint(y[i], 263), paramName[i]);
+			}
+		if((findChild<QComboBox *>("b_mode_"+QString::number(8*kontrolPage+i+1))->currentIndex() != 0) && (pluginMode == false))
 			image[floor(i/4)]->drawText(QRect(y[i], 32, 100, 13), Qt::AlignCenter, findChild<QLineEdit *>("b_description_"+QString::number(8*kontrolPage+i+1))->text());
 		}
 
@@ -923,7 +985,6 @@ void qkontrolWindow::setKeyzones()
 	image2->drawLine(120, 225, 120, 272);
 	image2->drawLine(240, 225, 240, 272);
 	image2->drawLine(360, 225, 360, 272);
-
 
 	drawImage(0, &screen1);
 	drawImage(1, &screen2);
@@ -1010,6 +1071,7 @@ void qkontrolWindow::setValuetextcolor() { selectColor("value"); }
 
 void qkontrolWindow::updateBacklights()
 {
+	bool updateParams;
 	QByteArray datagram;
 	QString uData;
 
@@ -1022,25 +1084,25 @@ void qkontrolWindow::updateBacklights()
         uData = datagram.data();
 	if(datagram.toHex().contains("2f706c61790000002c69000000000000")) // stopped
 		{
-		lightArray.replace(30,1,QByteArray::fromHex("21"));
-		lightArray.replace(31,1,QByteArray::fromHex("21"));
+		lightArray.replace(30,1,QByteArray::fromHex("20"));
+		lightArray.replace(31,1,QByteArray::fromHex("20"));
 		lightArray.replace(32,1,QByteArray::fromHex("FF"));
 		}
 	if(datagram.toHex().contains("2f706c61790000002c69000000000001")) // playing
 		{
 		lightArray.replace(30,1,QByteArray::fromHex("FF"));
-		lightArray.replace(32,1,QByteArray::fromHex("21"));
+		lightArray.replace(32,1,QByteArray::fromHex("20"));
 		}
 	if(datagram.toHex().contains("2f7265636f7264002c69000000000000")) // record off
-		lightArray.replace(31,1,QByteArray::fromHex("21"));
+		lightArray.replace(31,1,QByteArray::fromHex("20"));
 	if(datagram.toHex().contains("2f7265636f7264002c69000000000001")) // record on
 		lightArray.replace(31,1,QByteArray::fromHex("FF"));
 	if(datagram.toHex().contains("2f726570656174002c69000000000000")) // loop off
-		lightArray.replace(25,1,QByteArray::fromHex("21"));
+		lightArray.replace(25,1,QByteArray::fromHex("20"));
 	if(datagram.toHex().contains("2f726570656174002c69000000000001")) // loop on
 		lightArray.replace(25,1,QByteArray::fromHex("FF"));
 	if(datagram.toHex().contains("2f636c69636b00002c69000000000000")) // metronome off
-		lightArray.replace(26,1,QByteArray::fromHex("21"));
+		lightArray.replace(26,1,QByteArray::fromHex("20"));
 	if(datagram.toHex().contains("2f636c69636b00002c69000000000001")) // metronome on
 		lightArray.replace(26,1,QByteArray::fromHex("FF"));
 	if(datagram.contains("/track/selected/mute"))
@@ -1070,13 +1132,29 @@ void qkontrolWindow::updateBacklights()
 		}
 	if(datagram.contains("/beat/str"))
 		{
-		beatstring = QString(datagram.replace(0x00,0x20)).split("/beat/str")[1].split(",s")[1].split(",")[0].split("  ")[1];
+		beatstring = QString(datagram.replace(0x00,0x20)).split("/beat/str")[1].split(",s")[1].split(",")[0].split("  ")[1].replace(":",".");
 		changeTrackinfo = true;
 		}
 	if(datagram.contains("/time/str"))
 		{
-		timestring = QString(datagram.replace(0x00,0x20)).split("/time/str")[1].split(",s")[1].split(",")[0].split("  ")[1];
+		timestring = QString(datagram.replace(0x00,0x20)).split("/time/str")[1].split(",s")[1].split(",")[0].split("  ")[1].replace(":","-").replace(".",":").replace("-","."); // quirk
 		changeTrackinfo = true;
+		}
+	if(pluginMode == true)
+		{
+		updateParams = false;
+		for(int i=1;i<=8;i++)
+			if(datagram.contains("/device/param/"+QString::number(i).toUtf8()+"/name"))
+				{
+				paramName = QStringList() << NULL << NULL << NULL << NULL << NULL << NULL << NULL << NULL;
+				updateParams = true;
+				break;
+				}
+		for(int i=1;i<=8;i++)
+			if(datagram.contains("/device/param/"+QString::number(i).toUtf8()+"/name"))
+				paramName[i-1] = QString(datagram.replace(0x00,0x20)).split("/device/param/"+QString::number(i).toUtf8()+"/name")[1].split(",s")[1].split(",")[0].split("  ")[1];
+		if(updateParams == true)
+			setKeyzones();
 		}
 	if(changeTrackinfo == true)
 		updateOSCInfo();
@@ -1084,6 +1162,7 @@ void qkontrolWindow::updateBacklights()
 // qDebug() << datagram.toHex() << datagram;
 }
 
+// function to change the visible colors inside the color buttons
 void qkontrolWindow::updateColors()
 {
 	QPixmap pixmapColors(color_CC->width()-4, color_CC->height()-4);
@@ -1101,6 +1180,7 @@ void qkontrolWindow::updateColors()
 
 qkontrolWindow::~qkontrolWindow()
 {
+	hid_close(handle);
 	res = hid_exit();
 }
 
@@ -1334,15 +1414,17 @@ void qkontrolWindow::oscConfig()
 
 	if(oscEnabled==true)
 		{
-		// enable mute, solo, loop, metro, play, stop and record buttons
+		// enable mute, solo, loop, metro, play, stop, record, plug-in and midi buttons
 		lightArray.replace(1,1,QByteArray::fromHex("04"));
 		lightArray.replace(2,1,QByteArray::fromHex("10"));
-//		lightArray.replace(15,1,QByteArray::fromHex("21")); // shift
-		lightArray.replace(25,1,QByteArray::fromHex("21"));
-		lightArray.replace(26,1,QByteArray::fromHex("21"));
-		lightArray.replace(30,1,QByteArray::fromHex("21"));
-		lightArray.replace(31,1,QByteArray::fromHex("21"));
+//		lightArray.replace(15,1,QByteArray::fromHex("20")); // shift
+		lightArray.replace(25,1,QByteArray::fromHex("20"));
+		lightArray.replace(26,1,QByteArray::fromHex("20"));
+		lightArray.replace(30,1,QByteArray::fromHex("20"));
+		lightArray.replace(31,1,QByteArray::fromHex("20"));
 		lightArray.replace(32,1,QByteArray::fromHex("FF"));
+		lightArray.replace(37,1,QByteArray::fromHex("20"));
+		lightArray.replace(40,1,QByteArray::fromHex("FF"));
 
 		// watch for incoming UDP traffic and call a function to update the button backlights
 		udpSocket->bind(QHostAddress(hostname), localPort, QUdpSocket::ShareAddress | QUdpSocket::ReuseAddressHint);
@@ -1353,7 +1435,7 @@ void qkontrolWindow::oscConfig()
 		}
 	else
 		{	
-		// disable mute, solo, loop, metro, play, stop and record buttons
+		// disable mute, solo, loop, metro, play, stop, record, plug-in and midi buttons
 		lightArray.replace(1,1,QByteArray::fromHex("00"));
 		lightArray.replace(2,1,QByteArray::fromHex("00"));
 		lightArray.replace(15,1,QByteArray::fromHex("00"));
@@ -1362,10 +1444,14 @@ void qkontrolWindow::oscConfig()
 		lightArray.replace(30,1,QByteArray::fromHex("00"));
 		lightArray.replace(31,1,QByteArray::fromHex("00"));
 		lightArray.replace(32,1,QByteArray::fromHex("00"));
+		lightArray.replace(37,1,QByteArray::fromHex("00"));
+		lightArray.replace(40,1,QByteArray::fromHex("00"));
 
 		// disable UDP and slot connection
 		udpSocket->close();
 		}
+
+	// finally call the functions to apply the button backlight settings and the screen information
 	setButtons();
 	setKeyzones();
 	}

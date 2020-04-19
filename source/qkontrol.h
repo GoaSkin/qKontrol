@@ -35,6 +35,7 @@ class qkontrolWindow : public QMainWindow , protected Ui_mainwindow
 		QTemporaryFile leftScreen, rightScreen; // image files to be displayed on the screens
 		QTimer *hid_data;
 		QString getControlName(uint8_t CC);
+		QStringList paramName;
 		QDir dirName;
 		bool load(QString filename); // function to load a preset
 		QUdpSocket *udpSocket; // UDP socket to be used on OSC
