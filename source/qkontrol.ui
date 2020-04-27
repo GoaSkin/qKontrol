@@ -3978,6 +3978,286 @@
               <bool>false</bool>
              </property>
             </widget>
+            <widget class="QComboBox" name="k_scaling_1">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>40</y>
+               <width>81</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0...127</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>-64...63</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0...1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>on/off</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QLabel" name="labelKnobmode_5">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>10</y>
+               <width>81</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font-weight: bold;</string>
+             </property>
+             <property name="text">
+              <string>Scaling</string>
+             </property>
+            </widget>
+            <widget class="QComboBox" name="k_scaling_2">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>80</y>
+               <width>81</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0...127</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>-64...63</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0...1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>on/off</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QComboBox" name="k_scaling_3">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>120</y>
+               <width>81</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0...127</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>-64...63</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0...1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>on/off</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QComboBox" name="k_scaling_4">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>160</y>
+               <width>81</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0...127</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>-64...63</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0...1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>on/off</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QComboBox" name="k_scaling_5">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>200</y>
+               <width>81</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0...127</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>-64...63</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0...1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>on/off</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QComboBox" name="k_scaling_6">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>240</y>
+               <width>81</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="currentIndex">
+              <number>1</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0...127</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>-64...63</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0...1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>on/off</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QComboBox" name="k_scaling_7">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>280</y>
+               <width>81</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="currentIndex">
+              <number>1</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0...127</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>-64...63</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0...1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>on/off</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QComboBox" name="k_scaling_8">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>320</y>
+               <width>81</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0...127</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>-64...63</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0...1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>on/off</string>
+              </property>
+             </item>
+            </widget>
            </widget>
            <widget class="QWidget" name="kPage_2">
             <widget class="QLabel" name="labelKnobmode_2">
@@ -4719,6 +4999,286 @@
              </property>
              <property name="text">
               <string>Description</string>
+             </property>
+            </widget>
+            <widget class="QComboBox" name="k_scaling_9">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>40</y>
+               <width>81</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0...127</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>-64...63</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0...1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>on/off</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QComboBox" name="k_scaling_10">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>80</y>
+               <width>81</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0...127</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>-64...63</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0...1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>on/off</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QComboBox" name="k_scaling_11">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>120</y>
+               <width>81</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0...127</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>-64...63</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0...1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>on/off</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QComboBox" name="k_scaling_12">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>160</y>
+               <width>81</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0...127</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>-64...63</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0...1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>on/off</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QComboBox" name="k_scaling_13">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>200</y>
+               <width>81</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0...127</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>-64...63</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0...1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>on/off</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QComboBox" name="k_scaling_14">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>240</y>
+               <width>81</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0...127</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>-64...63</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0...1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>on/off</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QComboBox" name="k_scaling_15">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>280</y>
+               <width>81</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0...127</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>-64...63</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0...1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>on/off</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QComboBox" name="k_scaling_16">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>320</y>
+               <width>81</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0...127</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>-64...63</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0...1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>on/off</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QLabel" name="labelKnobmode_6">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>10</y>
+               <width>81</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font-weight: bold;</string>
+             </property>
+             <property name="text">
+              <string>Scaling</string>
              </property>
             </widget>
            </widget>
@@ -5464,6 +6024,286 @@
               <string>Description</string>
              </property>
             </widget>
+            <widget class="QComboBox" name="k_scaling_17">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>40</y>
+               <width>81</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0...127</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>-64...63</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0...1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>on/off</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QComboBox" name="k_scaling_18">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>80</y>
+               <width>81</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0...127</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>-64...63</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0...1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>on/off</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QComboBox" name="k_scaling_19">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>120</y>
+               <width>81</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0...127</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>-64...63</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0...1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>on/off</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QComboBox" name="k_scaling_20">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>160</y>
+               <width>81</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0...127</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>-64...63</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0...1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>on/off</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QComboBox" name="k_scaling_21">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>200</y>
+               <width>81</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0...127</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>-64...63</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0...1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>on/off</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QComboBox" name="k_scaling_22">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>240</y>
+               <width>81</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0...127</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>-64...63</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0...1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>on/off</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QComboBox" name="k_scaling_23">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>280</y>
+               <width>81</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0...127</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>-64...63</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0...1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>on/off</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QComboBox" name="k_scaling_24">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>320</y>
+               <width>81</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0...127</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>-64...63</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0...1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>on/off</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QLabel" name="labelKnobmode_7">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>10</y>
+               <width>81</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font-weight: bold;</string>
+             </property>
+             <property name="text">
+              <string>Scaling</string>
+             </property>
+            </widget>
            </widget>
            <widget class="QWidget" name="kPage_4">
             <widget class="QLabel" name="labelLastkey_11">
@@ -6184,6 +7024,286 @@
              </property>
              <property name="text">
               <string>Description</string>
+             </property>
+            </widget>
+            <widget class="QComboBox" name="k_scaling_25">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>40</y>
+               <width>81</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0...127</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>-64...63</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0...1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>on/off</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QComboBox" name="k_scaling_26">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>80</y>
+               <width>81</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0...127</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>-64...63</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0...1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>on/off</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QComboBox" name="k_scaling_27">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>120</y>
+               <width>81</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0...127</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>-64...63</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0...1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>on/off</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QComboBox" name="k_scaling_28">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>160</y>
+               <width>81</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0...127</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>-64...63</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0...1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>on/off</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QComboBox" name="k_scaling_29">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>200</y>
+               <width>81</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0...127</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>-64...63</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0...1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>on/off</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QComboBox" name="k_scaling_30">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>240</y>
+               <width>81</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0...127</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>-64...63</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0...1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>on/off</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QComboBox" name="k_scaling_31">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>280</y>
+               <width>81</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0...127</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>-64...63</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0...1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>on/off</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QComboBox" name="k_scaling_32">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>320</y>
+               <width>81</width>
+               <height>32</height>
+              </rect>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>0...127</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>-64...63</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>0...1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>on/off</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QLabel" name="labelKnobmode_8">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>10</y>
+               <width>81</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font-weight: bold;</string>
+             </property>
+             <property name="text">
+              <string>Scaling</string>
              </property>
             </widget>
            </widget>
@@ -12728,8 +13848,8 @@
              <rect>
               <x>0</x>
               <y>0</y>
-              <width>649</width>
-              <height>82</height>
+              <width>100</width>
+              <height>30</height>
              </rect>
             </property>
             <attribute name="label">
@@ -12814,8 +13934,8 @@
              <rect>
               <x>0</x>
               <y>0</y>
-              <width>649</width>
-              <height>82</height>
+              <width>100</width>
+              <height>30</height>
              </rect>
             </property>
             <attribute name="label">
@@ -13040,8 +14160,8 @@
              <rect>
               <x>0</x>
               <y>0</y>
-              <width>649</width>
-              <height>82</height>
+              <width>100</width>
+              <height>30</height>
              </rect>
             </property>
             <attribute name="label">
@@ -13425,7 +14545,7 @@
                </rect>
               </property>
               <property name="currentIndex">
-               <number>2</number>
+               <number>0</number>
               </property>
               <item>
                <property name="text">
@@ -13907,7 +15027,7 @@
                 </rect>
                </property>
                <property name="currentIndex">
-                <number>2</number>
+                <number>0</number>
                </property>
                <item>
                 <property name="text">
@@ -14174,7 +15294,7 @@
                 </rect>
                </property>
                <property name="currentIndex">
-                <number>2</number>
+                <number>0</number>
                </property>
                <item>
                 <property name="text">
@@ -14422,7 +15542,7 @@
                </rect>
               </property>
               <property name="currentIndex">
-               <number>2</number>
+               <number>0</number>
               </property>
               <item>
                <property name="text">
@@ -14638,7 +15758,7 @@
               </rect>
              </property>
              <property name="currentIndex">
-              <number>0</number>
+              <number>1</number>
              </property>
              <widget class="QWidget" name="tab_3">
               <attribute name="title">
@@ -14904,7 +16024,7 @@
                 </rect>
                </property>
                <property name="currentIndex">
-                <number>2</number>
+                <number>0</number>
                </property>
                <item>
                 <property name="text">
@@ -15171,7 +16291,7 @@
                 </rect>
                </property>
                <property name="currentIndex">
-                <number>2</number>
+                <number>0</number>
                </property>
                <item>
                 <property name="text">

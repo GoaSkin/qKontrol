@@ -224,15 +224,16 @@ void qkontrolWindow::updateWidgets()
 {
 	// knob page
 	QList<QComboBox *> allKModes = tabWidget->findChildren<QComboBox *>(QRegExp("^k_mode_"));
+	QList<QComboBox *> allKScalings = tabWidget->findChildren<QComboBox *>(QRegExp("^k_scaling_"));
 	QList<QSpinBox *> allKChannels = tabWidget->findChildren<QSpinBox *>(QRegExp("^k_channel_"));
 	QList<QSpinBox *> allKControls = tabWidget->findChildren<QSpinBox *>(QRegExp("^k_CC_"));
 	QList<QLineEdit *> allKDescriptions = tabWidget->findChildren<QLineEdit *>(QRegExp("^k_description_"));
 	for(int i=0; i<allKModes.count();i++)
 		switch(allKModes[i]->currentIndex())
 			{
-			case 0: allKChannels[i]->setEnabled(0); allKControls[i]->setEnabled(0); allKDescriptions[i]->setEnabled(0); break;
-			case 1: allKChannels[i]->setEnabled(1); allKControls[i]->setEnabled(0); allKDescriptions[i]->setEnabled(1); break;
-			default: allKChannels[i]->setEnabled(1); allKControls[i]->setEnabled(1); allKDescriptions[i]->setEnabled(1); break;
+			case 0: allKScalings[i]->setEnabled(0); allKChannels[i]->setEnabled(0); allKControls[i]->setEnabled(0); allKDescriptions[i]->setEnabled(0); break;
+			case 1: allKScalings[i]->setEnabled(0); allKChannels[i]->setEnabled(1); allKControls[i]->setEnabled(0); allKDescriptions[i]->setEnabled(1); break;
+			default: allKScalings[i]->setEnabled(1); allKChannels[i]->setEnabled(1); allKControls[i]->setEnabled(1); allKDescriptions[i]->setEnabled(1); break;
 			}
 
 	// button page
@@ -363,6 +364,7 @@ void qkontrolWindow::updateValues()
 	if((res == 51) && (DATA_IN[0]==char(0xaa)))
 		{
 		QList<QComboBox *> allModes = tabWidget->findChildren<QComboBox *>(QRegExp("^k_mode_"));
+		QList<QComboBox *> allKScalings = tabWidget->findChildren<QComboBox *>(QRegExp("^k_scaling_"));
 		QList<int> x, y, dis; // startpoint coordinates and destination display for CC value illustration
 		x << 80 << 200 << 320 << 440 << 80 << 200 << 320 << 440;
 		y << 231 << 231 << 231 << 231 << 231 << 231 << 231 << 231;
@@ -373,13 +375,51 @@ void qkontrolWindow::updateValues()
 		knobPainter->setFont(QFont("Arial", 14, QFont::Bold));
 		knobPainter->setPen(allColors["value"]);
 		knobValue.fill(Qt::black);
+
+		// draw the current knob values onto the screens but recalculate them based on the chosen scaling method
 		for(int i=0;i<=7;i++)
-			if((findChild<QComboBox *>("k_mode_"+QString::number(8*kontrolPage+i+1))->currentIndex() != 0) && (DATA_IN[17+i*2] != knobsButtons[17+i*2]))
+			{
+			if(pluginMode == false) // ignore scaling settings in plugin mode, otherwise recalculate the values on illustration
 				{
-				knobValue.fill(Qt::black);
-				knobPainter->drawText(QRect(0, 0, 30, 18), Qt::AlignRight, QString::number(DATA_IN[17+i*2]));
-				drawImage(dis[i], &knobValue, x[i], y[i]);
+				if((findChild<QComboBox *>("k_mode_"+QString::number(8*kontrolPage+i+1))->currentIndex() != 0) && (DATA_IN[17+i*2] != knobsButtons[17+i*2]))
+					{
+					knobValue.fill(Qt::black);
+					switch(findChild<QComboBox *>("k_scaling_"+QString::number(8*kontrolPage+i+1))->currentIndex())
+						{
+						case 0: // 0...127
+							{
+							knobPainter->drawText(QRect(0, 0, 30, 18), Qt::AlignRight, QString::number(DATA_IN[17+i*2]));
+							break;
+							}
+						case 1: // -64...63
+							{
+							knobPainter->drawText(QRect(0, 0, 30, 18), Qt::AlignRight, QString::number(DATA_IN[17+i*2]-64));
+							break;
+							}
+						case 2: // 0...1
+							{
+							knobPainter->drawText(QRect(0, 0, 30, 18), Qt::AlignRight, QString::number((double)DATA_IN[17+i*2]/127,'f',2).remove(QRegExp("^[0]")).replace("1.00","1").replace(".00","0"));
+							break;
+							}
+						case 3: // off...on
+							{
+							if(DATA_IN[17+i*2] < 64)
+								knobPainter->drawText(QRect(0, 0, 30, 18), Qt::AlignRight, "off");
+							else
+								knobPainter->drawText(QRect(0, 0, 30, 18), Qt::AlignRight, "on");
+							break;
+							}
+						}
+					drawImage(dis[i], &knobValue, x[i], y[i]);
+					}
 				}
+			else
+				if(DATA_IN[17+i*2] != knobsButtons[17+i*2])
+					{
+					knobPainter->drawText(QRect(0, 0, 30, 18), Qt::AlignRight, QString::number(DATA_IN[17+i*2]));
+					drawImage(dis[i], &knobValue, x[i], y[i]);
+					}
+			}
 		knobPainter->end();
 		knobsButtons = DATA_IN;
 
@@ -961,13 +1001,10 @@ void qkontrolWindow::setKeyzones()
 
 	for(int i=0;i<=7;i++)
 		{
-		if(findChild<QComboBox *>("k_mode_"+QString::number(8*kontrolPage+i+1))->currentIndex() == 2)
-			{
-			if(pluginMode == false)
-				image[floor(i/4)]->drawText(QPoint(y[i], 263), findChild<QLineEdit *>("k_description_"+QString::number(8*kontrolPage+i+1))->text());
-			else
-				image[floor(i/4)]->drawText(QPoint(y[i], 263), paramName[i]);
-			}
+		if((findChild<QComboBox *>("k_mode_"+QString::number(8*kontrolPage+i+1))->currentIndex() == 2) && (pluginMode == false))
+			image[floor(i/4)]->drawText(QPoint(y[i], 263), findChild<QLineEdit *>("k_description_"+QString::number(8*kontrolPage+i+1))->text());
+		if(pluginMode == true)
+			image[floor(i/4)]->drawText(QPoint(y[i], 263), paramName[i]);
 		if((findChild<QComboBox *>("b_mode_"+QString::number(8*kontrolPage+i+1))->currentIndex() != 0) && (pluginMode == false))
 			image[floor(i/4)]->drawText(QRect(y[i], 32, 100, 13), Qt::AlignCenter, findChild<QLineEdit *>("b_description_"+QString::number(8*kontrolPage+i+1))->text());
 		}
