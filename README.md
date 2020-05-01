@@ -32,13 +32,13 @@ Ubuntu Linux:
 
 1.) install the following packages from the repositories:
 
-sudo apt-get install qtbase5-dev-tools qtbase5-dev build-essential libhidapi-dev:amd64 libhidapi-libusb0 libusb-1.0-0-dev
+- sudo apt-get install qtbase5-dev-tools qtbase5-dev build-essential libhidapi-dev:amd64 libhidapi-libusb0 libusb-1.0-0-dev
 
 2.) dive into the source directory of the program and execute the following commands:
 
-/usr/lib/x86_64-linux-gnu/qt5/bin/qmake
-make
-strip qkontrol
+- /usr/lib/x86_64-linux-gnu/qt5/bin/qmake
+- make
+- strip qkontrol
 
 
 Mac OS X:
