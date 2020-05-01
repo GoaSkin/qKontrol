@@ -432,7 +432,11 @@ void qkontrolWindow::updateValues()
 
 	// qDebug() << DATA_IN.toHex();
 		}
+#ifdef Q_OS_WIN 
+	if((res == 51) && (DATA_IN[0]==char(0x01)))
+#else
 	if((res == 32) && (DATA_IN[0]==char(0x01)))
+#endif
 		{
 		// if the button values are still the same, no other button has been pushed. Therefore: ignore
 		if(DATA_IN.left(6) == oldButtonArray)
