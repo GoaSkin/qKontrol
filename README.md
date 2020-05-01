@@ -49,9 +49,9 @@ Mac OS X:
 
 3.) open a terminal to install libhidapi and libusb using brew:
 
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null
-brew install libusb
-brew install libhidapi
+- ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null
+- brew install libusb
+- brew install libhidapi
 
 4.) start the program "QT creator" from your recently installed QT distribution, open the .pro file from the qkontrol source
     and build the program using the menus
