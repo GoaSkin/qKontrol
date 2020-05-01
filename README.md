@@ -71,8 +71,8 @@ Windows:
     "Komplete Kontrol MK2 BD". When selected, replace the driver! This is necessary because we cannot interact with the
     original Native Instruments driver. The prior installation is only necessary for MIDI.
 
-4.) Visit https://www.msys2.org/ . There, download and install MSYS2. After the installation, a shell opens and we need to   install
-    the dependencies by typing in these commands:
+4.) Visit https://www.msys2.org/ . There, download and install MSYS2. After the installation,
+    a shell opens and we need to    install  the dependencies by typing in these commands:
     pacman -S mingw-w64-x86_64-hidapi
     pacman -S mingw-w64-x86_64-libusb
 
