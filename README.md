@@ -73,8 +73,8 @@ Windows:
 
 4.) Visit https://www.msys2.org/ . There, download and install MSYS2. After the installation,
     a shell opens and we need to    install  the dependencies by typing in these commands:
-    pacman -S mingw-w64-x86_64-hidapi
-    pacman -S mingw-w64-x86_64-libusb
+    - pacman -S mingw-w64-x86_64-hidapi
+    - pacman -S mingw-w64-x86_64-libusb
 
 5.) download the QT open source edition from https://www.qt.io/ and install it
 
