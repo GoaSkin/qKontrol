@@ -60,7 +60,35 @@ brew install libhidapi
     'macdeployqt' from your QT installation. When found, then open a terminal and go into the folder where QT creator placedi
     the executable app bundle. Execute /the/folder/where/you/can/find/macdeployqt qkontrol.app. 
 
+Windows:
 
+1.) De-install the Komplete Kontrol Software and the NI Host Agent if installed. This software cannot coexist on Windows.
+
+2.) Visit https://www.native-instruments.com/de/support/downloads/drivers-other-files/ , download and install the Komplete
+    Kontrol MK2 drivers.
+
+3.) Download ZADIG from https://zadig.akeo.ie/ and start this tool. Research for USB devices and select
+    "Komplete Kontrol MK2 BD". When selected, replace the driver! This is necessary because we cannot interact with the
+    original Native Instruments driver. The prior installation is only necessary for MIDI.
+
+4.) Visit https://www.msys2.org/ . There, download and install MSYS2. After the installation, a shell opens and we need to   install
+    the dependencies by typing in these commands:
+    pacman -S mingw-w64-x86_64-hidapi
+    pacman -S mingw-w64-x86_64-libusb
+
+5.) download the QT open source edition from https://www.qt.io/ and install it
+
+6.) start the program "QT creator" from your recently installed QT distribution, open the .pro file from the qkontrol source
+    and build the program using the menus. Use minGW 64 bit as toolchain because others won't work. After the program has been
+    compiled, it doesn't start through the QT creator. That is normal at this point. Ignore this!
+
+7.) Locate the place of your freshly compiled qkontrol.exe and run the program!
+    It does just list a lot of missing DLLs. Notice the names, locate them on your harddisk and copy them all into this directory.
+
+8.) run the program again to check if it works now.
+
+9.) if you want to redistribute the compiled windows vesion, it is a good idea to pack all the DLLs into the archive and maybe also the driver you created with ZADIG.
+    
    
 KNOWN ISSUES:
 =============
