@@ -113,7 +113,7 @@
           <widget class="QLabel" name="labelColor">
            <property name="geometry">
             <rect>
-             <x>370</x>
+             <x>310</x>
              <y>10</y>
              <width>81</width>
              <height>18</height>
@@ -129,7 +129,7 @@
           <widget class="QLabel" name="labelLastkey_2">
            <property name="geometry">
             <rect>
-             <x>240</x>
+             <x>200</x>
              <y>10</y>
              <width>81</width>
              <height>20</height>
@@ -275,7 +275,7 @@
           <widget class="QLabel" name="labelLastkey">
            <property name="geometry">
             <rect>
-             <x>110</x>
+             <x>90</x>
              <y>10</y>
              <width>81</width>
              <height>18</height>
@@ -405,7 +405,7 @@
           <widget class="QSpinBox" name="channel_1">
            <property name="geometry">
             <rect>
-             <x>240</x>
+             <x>200</x>
              <y>30</y>
              <width>85</width>
              <height>32</height>
@@ -421,7 +421,7 @@
           <widget class="QSpinBox" name="channel_2">
            <property name="geometry">
             <rect>
-             <x>240</x>
+             <x>200</x>
              <y>70</y>
              <width>85</width>
              <height>32</height>
@@ -440,7 +440,7 @@
           <widget class="QSpinBox" name="channel_3">
            <property name="geometry">
             <rect>
-             <x>240</x>
+             <x>200</x>
              <y>110</y>
              <width>85</width>
              <height>32</height>
@@ -459,7 +459,7 @@
           <widget class="QSpinBox" name="channel_4">
            <property name="geometry">
             <rect>
-             <x>240</x>
+             <x>200</x>
              <y>150</y>
              <width>85</width>
              <height>32</height>
@@ -478,7 +478,7 @@
           <widget class="QSpinBox" name="channel_5">
            <property name="geometry">
             <rect>
-             <x>240</x>
+             <x>200</x>
              <y>190</y>
              <width>85</width>
              <height>32</height>
@@ -497,7 +497,7 @@
           <widget class="QSpinBox" name="channel_6">
            <property name="geometry">
             <rect>
-             <x>240</x>
+             <x>200</x>
              <y>230</y>
              <width>85</width>
              <height>32</height>
@@ -516,7 +516,7 @@
           <widget class="QSpinBox" name="channel_7">
            <property name="geometry">
             <rect>
-             <x>240</x>
+             <x>200</x>
              <y>270</y>
              <width>85</width>
              <height>32</height>
@@ -535,7 +535,7 @@
           <widget class="QSpinBox" name="channel_8">
            <property name="geometry">
             <rect>
-             <x>240</x>
+             <x>200</x>
              <y>310</y>
              <width>85</width>
              <height>32</height>
@@ -554,7 +554,7 @@
           <widget class="QSpinBox" name="channel_9">
            <property name="geometry">
             <rect>
-             <x>240</x>
+             <x>200</x>
              <y>350</y>
              <width>85</width>
              <height>32</height>
@@ -573,7 +573,7 @@
           <widget class="QSpinBox" name="channel_10">
            <property name="geometry">
             <rect>
-             <x>240</x>
+             <x>200</x>
              <y>390</y>
              <width>85</width>
              <height>32</height>
@@ -592,7 +592,7 @@
           <widget class="QSpinBox" name="channel_11">
            <property name="geometry">
             <rect>
-             <x>240</x>
+             <x>200</x>
              <y>430</y>
              <width>85</width>
              <height>32</height>
@@ -611,7 +611,7 @@
           <widget class="QSpinBox" name="channel_12">
            <property name="geometry">
             <rect>
-             <x>240</x>
+             <x>200</x>
              <y>470</y>
              <width>85</width>
              <height>32</height>
@@ -630,7 +630,7 @@
           <widget class="QSpinBox" name="channel_13">
            <property name="geometry">
             <rect>
-             <x>240</x>
+             <x>200</x>
              <y>510</y>
              <width>85</width>
              <height>32</height>
@@ -649,7 +649,7 @@
           <widget class="QSpinBox" name="channel_14">
            <property name="geometry">
             <rect>
-             <x>240</x>
+             <x>200</x>
              <y>550</y>
              <width>85</width>
              <height>32</height>
@@ -668,7 +668,7 @@
           <widget class="QSpinBox" name="channel_15">
            <property name="geometry">
             <rect>
-             <x>240</x>
+             <x>200</x>
              <y>590</y>
              <width>85</width>
              <height>32</height>
@@ -687,7 +687,7 @@
           <widget class="QSpinBox" name="channel_16">
            <property name="geometry">
             <rect>
-             <x>240</x>
+             <x>200</x>
              <y>630</y>
              <width>85</width>
              <height>32</height>
@@ -747,7 +747,7 @@
            </property>
            <property name="geometry">
             <rect>
-             <x>370</x>
+             <x>310</x>
              <y>30</y>
              <width>83</width>
              <height>32</height>
@@ -805,7 +805,7 @@
            </property>
            <property name="geometry">
             <rect>
-             <x>370</x>
+             <x>310</x>
              <y>70</y>
              <width>83</width>
              <height>32</height>
@@ -863,7 +863,7 @@
            </property>
            <property name="geometry">
             <rect>
-             <x>370</x>
+             <x>310</x>
              <y>110</y>
              <width>83</width>
              <height>32</height>
@@ -921,7 +921,7 @@
            </property>
            <property name="geometry">
             <rect>
-             <x>370</x>
+             <x>310</x>
              <y>150</y>
              <width>83</width>
              <height>32</height>
@@ -979,7 +979,7 @@
            </property>
            <property name="geometry">
             <rect>
-             <x>370</x>
+             <x>310</x>
              <y>190</y>
              <width>83</width>
              <height>32</height>
@@ -1037,7 +1037,7 @@
            </property>
            <property name="geometry">
             <rect>
-             <x>370</x>
+             <x>310</x>
              <y>230</y>
              <width>83</width>
              <height>32</height>
@@ -1095,7 +1095,7 @@
            </property>
            <property name="geometry">
             <rect>
-             <x>370</x>
+             <x>310</x>
              <y>270</y>
              <width>83</width>
              <height>32</height>
@@ -1153,7 +1153,7 @@
            </property>
            <property name="geometry">
             <rect>
-             <x>370</x>
+             <x>310</x>
              <y>310</y>
              <width>83</width>
              <height>32</height>
@@ -1211,7 +1211,7 @@
            </property>
            <property name="geometry">
             <rect>
-             <x>370</x>
+             <x>310</x>
              <y>350</y>
              <width>83</width>
              <height>32</height>
@@ -1269,7 +1269,7 @@
            </property>
            <property name="geometry">
             <rect>
-             <x>370</x>
+             <x>310</x>
              <y>390</y>
              <width>83</width>
              <height>32</height>
@@ -1327,7 +1327,7 @@
            </property>
            <property name="geometry">
             <rect>
-             <x>370</x>
+             <x>310</x>
              <y>430</y>
              <width>83</width>
              <height>32</height>
@@ -1385,7 +1385,7 @@
            </property>
            <property name="geometry">
             <rect>
-             <x>370</x>
+             <x>310</x>
              <y>470</y>
              <width>83</width>
              <height>32</height>
@@ -1443,7 +1443,7 @@
            </property>
            <property name="geometry">
             <rect>
-             <x>370</x>
+             <x>310</x>
              <y>510</y>
              <width>83</width>
              <height>32</height>
@@ -1501,7 +1501,7 @@
            </property>
            <property name="geometry">
             <rect>
-             <x>370</x>
+             <x>310</x>
              <y>550</y>
              <width>83</width>
              <height>32</height>
@@ -1559,7 +1559,7 @@
            </property>
            <property name="geometry">
             <rect>
-             <x>370</x>
+             <x>310</x>
              <y>590</y>
              <width>83</width>
              <height>32</height>
@@ -1617,7 +1617,7 @@
            </property>
            <property name="geometry">
             <rect>
-             <x>370</x>
+             <x>310</x>
              <y>630</y>
              <width>83</width>
              <height>32</height>
@@ -1691,7 +1691,7 @@
           <widget class="QxtStringSpinBox" name="key_1">
            <property name="geometry">
             <rect>
-             <x>110</x>
+             <x>90</x>
              <y>30</y>
              <width>85</width>
              <height>32</height>
@@ -1707,7 +1707,7 @@
           <widget class="QxtStringSpinBox" name="key_2">
            <property name="geometry">
             <rect>
-             <x>110</x>
+             <x>90</x>
              <y>70</y>
              <width>85</width>
              <height>32</height>
@@ -1723,7 +1723,7 @@
           <widget class="QxtStringSpinBox" name="key_3">
            <property name="geometry">
             <rect>
-             <x>110</x>
+             <x>90</x>
              <y>110</y>
              <width>85</width>
              <height>32</height>
@@ -1739,7 +1739,7 @@
           <widget class="QxtStringSpinBox" name="key_4">
            <property name="geometry">
             <rect>
-             <x>110</x>
+             <x>90</x>
              <y>150</y>
              <width>85</width>
              <height>32</height>
@@ -1755,7 +1755,7 @@
           <widget class="QxtStringSpinBox" name="key_5">
            <property name="geometry">
             <rect>
-             <x>110</x>
+             <x>90</x>
              <y>190</y>
              <width>85</width>
              <height>32</height>
@@ -1771,7 +1771,7 @@
           <widget class="QxtStringSpinBox" name="key_6">
            <property name="geometry">
             <rect>
-             <x>110</x>
+             <x>90</x>
              <y>230</y>
              <width>85</width>
              <height>32</height>
@@ -1787,7 +1787,7 @@
           <widget class="QxtStringSpinBox" name="key_7">
            <property name="geometry">
             <rect>
-             <x>110</x>
+             <x>90</x>
              <y>270</y>
              <width>85</width>
              <height>32</height>
@@ -1803,7 +1803,7 @@
           <widget class="QxtStringSpinBox" name="key_8">
            <property name="geometry">
             <rect>
-             <x>110</x>
+             <x>90</x>
              <y>310</y>
              <width>85</width>
              <height>32</height>
@@ -1819,7 +1819,7 @@
           <widget class="QxtStringSpinBox" name="key_9">
            <property name="geometry">
             <rect>
-             <x>110</x>
+             <x>90</x>
              <y>350</y>
              <width>85</width>
              <height>32</height>
@@ -1835,7 +1835,7 @@
           <widget class="QxtStringSpinBox" name="key_10">
            <property name="geometry">
             <rect>
-             <x>110</x>
+             <x>90</x>
              <y>390</y>
              <width>85</width>
              <height>32</height>
@@ -1851,7 +1851,7 @@
           <widget class="QxtStringSpinBox" name="key_11">
            <property name="geometry">
             <rect>
-             <x>110</x>
+             <x>90</x>
              <y>430</y>
              <width>85</width>
              <height>32</height>
@@ -1867,7 +1867,7 @@
           <widget class="QxtStringSpinBox" name="key_12">
            <property name="geometry">
             <rect>
-             <x>110</x>
+             <x>90</x>
              <y>470</y>
              <width>85</width>
              <height>32</height>
@@ -1883,7 +1883,7 @@
           <widget class="QxtStringSpinBox" name="key_13">
            <property name="geometry">
             <rect>
-             <x>110</x>
+             <x>90</x>
              <y>510</y>
              <width>85</width>
              <height>32</height>
@@ -1899,7 +1899,7 @@
           <widget class="QxtStringSpinBox" name="key_14">
            <property name="geometry">
             <rect>
-             <x>110</x>
+             <x>90</x>
              <y>550</y>
              <width>85</width>
              <height>32</height>
@@ -1915,7 +1915,7 @@
           <widget class="QxtStringSpinBox" name="key_15">
            <property name="geometry">
             <rect>
-             <x>110</x>
+             <x>90</x>
              <y>590</y>
              <width>85</width>
              <height>32</height>
@@ -1931,7 +1931,7 @@
           <widget class="QxtStringSpinBox" name="key_16">
            <property name="geometry">
             <rect>
-             <x>110</x>
+             <x>90</x>
              <y>630</y>
              <width>85</width>
              <height>32</height>
@@ -2222,7 +2222,7 @@
            </property>
            <property name="geometry">
             <rect>
-             <x>500</x>
+             <x>420</x>
              <y>30</y>
              <width>83</width>
              <height>32</height>
@@ -2270,7 +2270,7 @@
           <widget class="QLabel" name="labelVelocity">
            <property name="geometry">
             <rect>
-             <x>500</x>
+             <x>420</x>
              <y>10</y>
              <width>81</width>
              <height>18</height>
@@ -2289,7 +2289,7 @@
            </property>
            <property name="geometry">
             <rect>
-             <x>500</x>
+             <x>420</x>
              <y>70</y>
              <width>83</width>
              <height>32</height>
@@ -2340,7 +2340,7 @@
            </property>
            <property name="geometry">
             <rect>
-             <x>500</x>
+             <x>420</x>
              <y>110</y>
              <width>83</width>
              <height>32</height>
@@ -2391,7 +2391,7 @@
            </property>
            <property name="geometry">
             <rect>
-             <x>500</x>
+             <x>420</x>
              <y>150</y>
              <width>83</width>
              <height>32</height>
@@ -2442,7 +2442,7 @@
            </property>
            <property name="geometry">
             <rect>
-             <x>500</x>
+             <x>420</x>
              <y>190</y>
              <width>83</width>
              <height>32</height>
@@ -2493,7 +2493,7 @@
            </property>
            <property name="geometry">
             <rect>
-             <x>500</x>
+             <x>420</x>
              <y>230</y>
              <width>83</width>
              <height>32</height>
@@ -2544,7 +2544,7 @@
            </property>
            <property name="geometry">
             <rect>
-             <x>500</x>
+             <x>420</x>
              <y>270</y>
              <width>83</width>
              <height>32</height>
@@ -2595,7 +2595,7 @@
            </property>
            <property name="geometry">
             <rect>
-             <x>500</x>
+             <x>420</x>
              <y>310</y>
              <width>83</width>
              <height>32</height>
@@ -2646,7 +2646,7 @@
            </property>
            <property name="geometry">
             <rect>
-             <x>500</x>
+             <x>420</x>
              <y>350</y>
              <width>83</width>
              <height>32</height>
@@ -2697,7 +2697,7 @@
            </property>
            <property name="geometry">
             <rect>
-             <x>500</x>
+             <x>420</x>
              <y>390</y>
              <width>83</width>
              <height>32</height>
@@ -2748,7 +2748,7 @@
            </property>
            <property name="geometry">
             <rect>
-             <x>500</x>
+             <x>420</x>
              <y>430</y>
              <width>83</width>
              <height>32</height>
@@ -2799,7 +2799,7 @@
            </property>
            <property name="geometry">
             <rect>
-             <x>500</x>
+             <x>420</x>
              <y>470</y>
              <width>83</width>
              <height>32</height>
@@ -2850,7 +2850,7 @@
            </property>
            <property name="geometry">
             <rect>
-             <x>500</x>
+             <x>420</x>
              <y>510</y>
              <width>83</width>
              <height>32</height>
@@ -2901,7 +2901,7 @@
            </property>
            <property name="geometry">
             <rect>
-             <x>500</x>
+             <x>420</x>
              <y>550</y>
              <width>83</width>
              <height>32</height>
@@ -2952,7 +2952,7 @@
            </property>
            <property name="geometry">
             <rect>
-             <x>500</x>
+             <x>420</x>
              <y>590</y>
              <width>83</width>
              <height>32</height>
@@ -3003,7 +3003,7 @@
            </property>
            <property name="geometry">
             <rect>
-             <x>500</x>
+             <x>420</x>
              <y>630</y>
              <width>83</width>
              <height>32</height>
@@ -3047,6 +3047,326 @@
              <string>hard 3</string>
             </property>
            </item>
+          </widget>
+          <widget class="QSpinBox" name="transpose_1">
+           <property name="geometry">
+            <rect>
+             <x>530</x>
+             <y>30</y>
+             <width>85</width>
+             <height>32</height>
+            </rect>
+           </property>
+           <property name="minimum">
+            <number>-25</number>
+           </property>
+           <property name="maximum">
+            <number>25</number>
+           </property>
+           <property name="value">
+            <number>0</number>
+           </property>
+          </widget>
+          <widget class="QLabel" name="labelVelocity_2">
+           <property name="geometry">
+            <rect>
+             <x>530</x>
+             <y>10</y>
+             <width>81</width>
+             <height>18</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font-weight: bold;</string>
+           </property>
+           <property name="text">
+            <string>Transpose</string>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="transpose_2">
+           <property name="geometry">
+            <rect>
+             <x>530</x>
+             <y>70</y>
+             <width>85</width>
+             <height>32</height>
+            </rect>
+           </property>
+           <property name="minimum">
+            <number>-25</number>
+           </property>
+           <property name="maximum">
+            <number>25</number>
+           </property>
+           <property name="value">
+            <number>0</number>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="transpose_3">
+           <property name="geometry">
+            <rect>
+             <x>530</x>
+             <y>110</y>
+             <width>85</width>
+             <height>32</height>
+            </rect>
+           </property>
+           <property name="minimum">
+            <number>-25</number>
+           </property>
+           <property name="maximum">
+            <number>25</number>
+           </property>
+           <property name="value">
+            <number>0</number>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="transpose_4">
+           <property name="geometry">
+            <rect>
+             <x>530</x>
+             <y>150</y>
+             <width>85</width>
+             <height>32</height>
+            </rect>
+           </property>
+           <property name="minimum">
+            <number>-25</number>
+           </property>
+           <property name="maximum">
+            <number>25</number>
+           </property>
+           <property name="value">
+            <number>0</number>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="transpose_5">
+           <property name="geometry">
+            <rect>
+             <x>530</x>
+             <y>190</y>
+             <width>85</width>
+             <height>32</height>
+            </rect>
+           </property>
+           <property name="minimum">
+            <number>-25</number>
+           </property>
+           <property name="maximum">
+            <number>25</number>
+           </property>
+           <property name="value">
+            <number>0</number>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="transpose_6">
+           <property name="geometry">
+            <rect>
+             <x>530</x>
+             <y>230</y>
+             <width>85</width>
+             <height>32</height>
+            </rect>
+           </property>
+           <property name="minimum">
+            <number>-25</number>
+           </property>
+           <property name="maximum">
+            <number>25</number>
+           </property>
+           <property name="value">
+            <number>0</number>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="transpose_7">
+           <property name="geometry">
+            <rect>
+             <x>530</x>
+             <y>270</y>
+             <width>85</width>
+             <height>32</height>
+            </rect>
+           </property>
+           <property name="minimum">
+            <number>-25</number>
+           </property>
+           <property name="maximum">
+            <number>25</number>
+           </property>
+           <property name="value">
+            <number>0</number>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="transpose_8">
+           <property name="geometry">
+            <rect>
+             <x>530</x>
+             <y>310</y>
+             <width>85</width>
+             <height>32</height>
+            </rect>
+           </property>
+           <property name="minimum">
+            <number>-25</number>
+           </property>
+           <property name="maximum">
+            <number>25</number>
+           </property>
+           <property name="value">
+            <number>0</number>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="transpose_9">
+           <property name="geometry">
+            <rect>
+             <x>530</x>
+             <y>350</y>
+             <width>85</width>
+             <height>32</height>
+            </rect>
+           </property>
+           <property name="minimum">
+            <number>-25</number>
+           </property>
+           <property name="maximum">
+            <number>25</number>
+           </property>
+           <property name="value">
+            <number>0</number>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="transpose_10">
+           <property name="geometry">
+            <rect>
+             <x>530</x>
+             <y>390</y>
+             <width>85</width>
+             <height>32</height>
+            </rect>
+           </property>
+           <property name="minimum">
+            <number>-25</number>
+           </property>
+           <property name="maximum">
+            <number>25</number>
+           </property>
+           <property name="value">
+            <number>0</number>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="transpose_11">
+           <property name="geometry">
+            <rect>
+             <x>530</x>
+             <y>430</y>
+             <width>85</width>
+             <height>32</height>
+            </rect>
+           </property>
+           <property name="minimum">
+            <number>-25</number>
+           </property>
+           <property name="maximum">
+            <number>25</number>
+           </property>
+           <property name="value">
+            <number>0</number>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="transpose_12">
+           <property name="geometry">
+            <rect>
+             <x>530</x>
+             <y>470</y>
+             <width>85</width>
+             <height>32</height>
+            </rect>
+           </property>
+           <property name="minimum">
+            <number>-25</number>
+           </property>
+           <property name="maximum">
+            <number>25</number>
+           </property>
+           <property name="value">
+            <number>0</number>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="transpose_13">
+           <property name="geometry">
+            <rect>
+             <x>530</x>
+             <y>510</y>
+             <width>85</width>
+             <height>32</height>
+            </rect>
+           </property>
+           <property name="minimum">
+            <number>-25</number>
+           </property>
+           <property name="maximum">
+            <number>25</number>
+           </property>
+           <property name="value">
+            <number>0</number>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="transpose_14">
+           <property name="geometry">
+            <rect>
+             <x>530</x>
+             <y>550</y>
+             <width>85</width>
+             <height>32</height>
+            </rect>
+           </property>
+           <property name="minimum">
+            <number>-25</number>
+           </property>
+           <property name="maximum">
+            <number>25</number>
+           </property>
+           <property name="value">
+            <number>0</number>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="transpose_15">
+           <property name="geometry">
+            <rect>
+             <x>530</x>
+             <y>590</y>
+             <width>85</width>
+             <height>32</height>
+            </rect>
+           </property>
+           <property name="minimum">
+            <number>-25</number>
+           </property>
+           <property name="maximum">
+            <number>25</number>
+           </property>
+           <property name="value">
+            <number>0</number>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="transpose_16">
+           <property name="geometry">
+            <rect>
+             <x>530</x>
+             <y>630</y>
+             <width>85</width>
+             <height>32</height>
+            </rect>
+           </property>
+           <property name="minimum">
+            <number>-25</number>
+           </property>
+           <property name="maximum">
+            <number>25</number>
+           </property>
+           <property name="value">
+            <number>0</number>
+           </property>
           </widget>
          </widget>
          <widget class="QWidget" name="knobs">
@@ -13848,8 +14168,8 @@
              <rect>
               <x>0</x>
               <y>0</y>
-              <width>100</width>
-              <height>30</height>
+              <width>649</width>
+              <height>73</height>
              </rect>
             </property>
             <attribute name="label">
@@ -13934,8 +14254,8 @@
              <rect>
               <x>0</x>
               <y>0</y>
-              <width>100</width>
-              <height>30</height>
+              <width>649</width>
+              <height>73</height>
              </rect>
             </property>
             <attribute name="label">
@@ -14160,8 +14480,8 @@
              <rect>
               <x>0</x>
               <y>0</y>
-              <width>100</width>
-              <height>30</height>
+              <width>649</width>
+              <height>73</height>
              </rect>
             </property>
             <attribute name="label">
@@ -16758,41 +17078,500 @@
   </customwidget>
  </customwidgets>
  <tabstops>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>key_1</tabstop>
   <tabstop>channel_1</tabstop>
   <tabstop>color_1</tabstop>
+  <tabstop>velocity_1</tabstop>
+  <tabstop>transpose_1</tabstop>
+  <tabstop>k_off_1</tabstop>
+  <tabstop>key_2</tabstop>
   <tabstop>channel_2</tabstop>
   <tabstop>color_2</tabstop>
+  <tabstop>velocity_2</tabstop>
+  <tabstop>transpose_2</tabstop>
+  <tabstop>k_off_2</tabstop>
+  <tabstop>key_3</tabstop>
   <tabstop>channel_3</tabstop>
   <tabstop>color_3</tabstop>
+  <tabstop>velocity_3</tabstop>
+  <tabstop>transpose_3</tabstop>
+  <tabstop>k_off_3</tabstop>
+  <tabstop>key_4</tabstop>
   <tabstop>channel_4</tabstop>
   <tabstop>color_4</tabstop>
+  <tabstop>velocity_4</tabstop>
+  <tabstop>transpose_4</tabstop>
+  <tabstop>k_off_4</tabstop>
+  <tabstop>key_5</tabstop>
   <tabstop>channel_5</tabstop>
   <tabstop>color_5</tabstop>
+  <tabstop>velocity_5</tabstop>
+  <tabstop>transpose_5</tabstop>
+  <tabstop>k_off_5</tabstop>
+  <tabstop>key_6</tabstop>
   <tabstop>channel_6</tabstop>
   <tabstop>color_6</tabstop>
+  <tabstop>velocity_6</tabstop>
+  <tabstop>transpose_6</tabstop>
+  <tabstop>k_off_6</tabstop>
+  <tabstop>key_7</tabstop>
   <tabstop>channel_7</tabstop>
   <tabstop>color_7</tabstop>
+  <tabstop>velocity_7</tabstop>
+  <tabstop>transpose_7</tabstop>
+  <tabstop>k_off_7</tabstop>
+  <tabstop>key_8</tabstop>
   <tabstop>channel_8</tabstop>
   <tabstop>color_8</tabstop>
+  <tabstop>velocity_8</tabstop>
+  <tabstop>transpose_8</tabstop>
+  <tabstop>k_off_8</tabstop>
+  <tabstop>key_9</tabstop>
   <tabstop>channel_9</tabstop>
   <tabstop>color_9</tabstop>
+  <tabstop>velocity_9</tabstop>
+  <tabstop>transpose_9</tabstop>
+  <tabstop>k_off_9</tabstop>
+  <tabstop>key_10</tabstop>
   <tabstop>channel_10</tabstop>
   <tabstop>color_10</tabstop>
+  <tabstop>velocity_10</tabstop>
+  <tabstop>transpose_10</tabstop>
+  <tabstop>k_off_10</tabstop>
+  <tabstop>key_11</tabstop>
   <tabstop>channel_11</tabstop>
   <tabstop>color_11</tabstop>
+  <tabstop>velocity_11</tabstop>
+  <tabstop>transpose_11</tabstop>
+  <tabstop>k_off_11</tabstop>
+  <tabstop>key_12</tabstop>
   <tabstop>channel_12</tabstop>
   <tabstop>color_12</tabstop>
+  <tabstop>velocity_12</tabstop>
+  <tabstop>transpose_12</tabstop>
+  <tabstop>k_off_12</tabstop>
+  <tabstop>key_13</tabstop>
   <tabstop>channel_13</tabstop>
   <tabstop>color_13</tabstop>
+  <tabstop>velocity_13</tabstop>
+  <tabstop>transpose_13</tabstop>
+  <tabstop>k_off_13</tabstop>
+  <tabstop>key_14</tabstop>
   <tabstop>channel_14</tabstop>
   <tabstop>color_14</tabstop>
+  <tabstop>velocity_14</tabstop>
+  <tabstop>transpose_14</tabstop>
+  <tabstop>k_off_14</tabstop>
+  <tabstop>key_15</tabstop>
   <tabstop>channel_15</tabstop>
   <tabstop>color_15</tabstop>
+  <tabstop>velocity_15</tabstop>
+  <tabstop>transpose_15</tabstop>
+  <tabstop>k_off_15</tabstop>
+  <tabstop>key_16</tabstop>
   <tabstop>channel_16</tabstop>
   <tabstop>color_16</tabstop>
-  <tabstop>tabWidget</tabstop>
+  <tabstop>velocity_16</tabstop>
+  <tabstop>transpose_16</tabstop>
+  <tabstop>k_off_16</tabstop>
+  <tabstop>k_CC_1</tabstop>
+  <tabstop>k_channel_1</tabstop>
+  <tabstop>k_mode_1</tabstop>
+  <tabstop>k_scaling_1</tabstop>
+  <tabstop>k_description_1</tabstop>
+  <tabstop>k_CC_2</tabstop>
+  <tabstop>k_channel_2</tabstop>
+  <tabstop>k_mode_2</tabstop>
+  <tabstop>k_scaling_2</tabstop>
+  <tabstop>k_description_2</tabstop>
+  <tabstop>k_CC_3</tabstop>
+  <tabstop>k_channel_3</tabstop>
+  <tabstop>k_mode_3</tabstop>
+  <tabstop>k_scaling_3</tabstop>
+  <tabstop>k_description_3</tabstop>
+  <tabstop>k_CC_4</tabstop>
+  <tabstop>k_channel_4</tabstop>
+  <tabstop>k_mode_4</tabstop>
+  <tabstop>k_scaling_4</tabstop>
+  <tabstop>k_description_4</tabstop>
+  <tabstop>k_CC_5</tabstop>
+  <tabstop>k_channel_5</tabstop>
+  <tabstop>k_mode_5</tabstop>
+  <tabstop>k_scaling_5</tabstop>
+  <tabstop>k_description_5</tabstop>
+  <tabstop>k_CC_6</tabstop>
+  <tabstop>k_channel_6</tabstop>
+  <tabstop>k_mode_6</tabstop>
+  <tabstop>k_scaling_6</tabstop>
+  <tabstop>k_description_6</tabstop>
+  <tabstop>k_CC_7</tabstop>
+  <tabstop>k_channel_7</tabstop>
+  <tabstop>k_mode_7</tabstop>
+  <tabstop>k_scaling_7</tabstop>
+  <tabstop>k_description_7</tabstop>
+  <tabstop>k_CC_8</tabstop>
+  <tabstop>k_channel_8</tabstop>
+  <tabstop>k_mode_8</tabstop>
+  <tabstop>k_scaling_8</tabstop>
+  <tabstop>k_description_8</tabstop>
+  <tabstop>k_CC_9</tabstop>
+  <tabstop>k_channel_9</tabstop>
+  <tabstop>k_mode_9</tabstop>
+  <tabstop>k_scaling_9</tabstop>
+  <tabstop>k_description_9</tabstop>
+  <tabstop>k_CC_10</tabstop>
+  <tabstop>k_channel_10</tabstop>
+  <tabstop>k_mode_10</tabstop>
+  <tabstop>k_scaling_10</tabstop>
+  <tabstop>k_description_10</tabstop>
+  <tabstop>k_CC_11</tabstop>
+  <tabstop>k_channel_11</tabstop>
+  <tabstop>k_mode_11</tabstop>
+  <tabstop>k_scaling_11</tabstop>
+  <tabstop>k_description_11</tabstop>
+  <tabstop>k_CC_12</tabstop>
+  <tabstop>k_channel_12</tabstop>
+  <tabstop>k_mode_12</tabstop>
+  <tabstop>k_scaling_12</tabstop>
+  <tabstop>k_description_12</tabstop>
+  <tabstop>k_CC_13</tabstop>
+  <tabstop>k_channel_13</tabstop>
+  <tabstop>k_mode_13</tabstop>
+  <tabstop>k_scaling_13</tabstop>
+  <tabstop>k_description_13</tabstop>
+  <tabstop>k_CC_14</tabstop>
+  <tabstop>k_channel_14</tabstop>
+  <tabstop>k_mode_14</tabstop>
+  <tabstop>k_scaling_14</tabstop>
+  <tabstop>k_description_14</tabstop>
+  <tabstop>k_CC_15</tabstop>
+  <tabstop>k_channel_15</tabstop>
+  <tabstop>k_mode_15</tabstop>
+  <tabstop>k_scaling_15</tabstop>
+  <tabstop>k_description_15</tabstop>
+  <tabstop>k_CC_16</tabstop>
+  <tabstop>k_channel_16</tabstop>
+  <tabstop>k_mode_16</tabstop>
+  <tabstop>k_scaling_16</tabstop>
+  <tabstop>k_description_16</tabstop>
+  <tabstop>k_CC_17</tabstop>
+  <tabstop>k_channel_17</tabstop>
+  <tabstop>k_mode_17</tabstop>
+  <tabstop>k_scaling_17</tabstop>
+  <tabstop>k_description_17</tabstop>
+  <tabstop>k_CC_18</tabstop>
+  <tabstop>k_channel_18</tabstop>
+  <tabstop>k_mode_18</tabstop>
+  <tabstop>k_scaling_18</tabstop>
+  <tabstop>k_description_18</tabstop>
+  <tabstop>k_CC_19</tabstop>
+  <tabstop>k_channel_19</tabstop>
+  <tabstop>k_mode_19</tabstop>
+  <tabstop>k_scaling_19</tabstop>
+  <tabstop>k_description_19</tabstop>
+  <tabstop>k_CC_20</tabstop>
+  <tabstop>k_channel_20</tabstop>
+  <tabstop>k_mode_20</tabstop>
+  <tabstop>k_scaling_20</tabstop>
+  <tabstop>k_description_20</tabstop>
+  <tabstop>k_CC_21</tabstop>
+  <tabstop>k_channel_21</tabstop>
+  <tabstop>k_mode_21</tabstop>
+  <tabstop>k_scaling_21</tabstop>
+  <tabstop>k_description_21</tabstop>
+  <tabstop>k_CC_22</tabstop>
+  <tabstop>k_channel_22</tabstop>
+  <tabstop>k_mode_22</tabstop>
+  <tabstop>k_scaling_22</tabstop>
+  <tabstop>k_description_22</tabstop>
+  <tabstop>k_CC_23</tabstop>
+  <tabstop>k_channel_23</tabstop>
+  <tabstop>k_mode_23</tabstop>
+  <tabstop>k_scaling_23</tabstop>
+  <tabstop>k_description_23</tabstop>
+  <tabstop>k_CC_24</tabstop>
+  <tabstop>k_channel_24</tabstop>
+  <tabstop>k_mode_24</tabstop>
+  <tabstop>k_scaling_24</tabstop>
+  <tabstop>k_description_24</tabstop>
+  <tabstop>k_CC_25</tabstop>
+  <tabstop>k_channel_25</tabstop>
+  <tabstop>k_mode_25</tabstop>
+  <tabstop>k_scaling_25</tabstop>
+  <tabstop>k_description_25</tabstop>
+  <tabstop>k_CC_26</tabstop>
+  <tabstop>k_channel_26</tabstop>
+  <tabstop>k_mode_26</tabstop>
+  <tabstop>k_scaling_26</tabstop>
+  <tabstop>k_description_26</tabstop>
+  <tabstop>k_CC_27</tabstop>
+  <tabstop>k_channel_27</tabstop>
+  <tabstop>k_mode_27</tabstop>
+  <tabstop>k_scaling_27</tabstop>
+  <tabstop>k_description_27</tabstop>
+  <tabstop>k_CC_28</tabstop>
+  <tabstop>k_channel_28</tabstop>
+  <tabstop>k_mode_28</tabstop>
+  <tabstop>k_scaling_28</tabstop>
+  <tabstop>k_description_28</tabstop>
+  <tabstop>k_CC_29</tabstop>
+  <tabstop>k_channel_29</tabstop>
+  <tabstop>k_mode_29</tabstop>
+  <tabstop>k_scaling_29</tabstop>
+  <tabstop>k_description_29</tabstop>
+  <tabstop>k_CC_30</tabstop>
+  <tabstop>k_channel_30</tabstop>
+  <tabstop>k_mode_30</tabstop>
+  <tabstop>k_scaling_30</tabstop>
+  <tabstop>k_description_30</tabstop>
+  <tabstop>k_CC_31</tabstop>
+  <tabstop>k_channel_31</tabstop>
+  <tabstop>k_mode_31</tabstop>
+  <tabstop>k_scaling_31</tabstop>
+  <tabstop>k_description_31</tabstop>
+  <tabstop>k_CC_32</tabstop>
+  <tabstop>k_channel_32</tabstop>
+  <tabstop>k_mode_32</tabstop>
+  <tabstop>k_scaling_32</tabstop>
+  <tabstop>k_description_32</tabstop>
+  <tabstop>toolButton_k_left</tabstop>
+  <tabstop>toolButton_k_right</tabstop>
+  <tabstop>b_CC_1</tabstop>
+  <tabstop>b_channel_1</tabstop>
+  <tabstop>b_mode_1</tabstop>
+  <tabstop>b_color_1</tabstop>
+  <tabstop>b_description_1</tabstop>
+  <tabstop>b_CC_2</tabstop>
+  <tabstop>b_channel_2</tabstop>
+  <tabstop>b_mode_2</tabstop>
+  <tabstop>b_color_2</tabstop>
+  <tabstop>b_description_2</tabstop>
+  <tabstop>b_CC_3</tabstop>
+  <tabstop>b_channel_3</tabstop>
+  <tabstop>b_mode_3</tabstop>
+  <tabstop>b_color_3</tabstop>
+  <tabstop>b_description_3</tabstop>
+  <tabstop>b_CC_4</tabstop>
+  <tabstop>b_channel_4</tabstop>
+  <tabstop>b_mode_4</tabstop>
+  <tabstop>b_color_4</tabstop>
+  <tabstop>b_description_4</tabstop>
+  <tabstop>b_CC_5</tabstop>
+  <tabstop>b_channel_5</tabstop>
+  <tabstop>b_mode_5</tabstop>
+  <tabstop>b_color_5</tabstop>
+  <tabstop>b_description_5</tabstop>
+  <tabstop>b_CC_6</tabstop>
+  <tabstop>b_channel_6</tabstop>
+  <tabstop>b_mode_6</tabstop>
+  <tabstop>b_color_6</tabstop>
+  <tabstop>b_description_6</tabstop>
+  <tabstop>b_CC_7</tabstop>
+  <tabstop>b_channel_7</tabstop>
+  <tabstop>b_mode_7</tabstop>
+  <tabstop>b_color_7</tabstop>
+  <tabstop>b_description_7</tabstop>
+  <tabstop>b_CC_8</tabstop>
+  <tabstop>b_channel_8</tabstop>
+  <tabstop>b_mode_8</tabstop>
+  <tabstop>b_color_8</tabstop>
+  <tabstop>b_description_8</tabstop>
+  <tabstop>b_CC_9</tabstop>
+  <tabstop>b_channel_9</tabstop>
+  <tabstop>b_mode_9</tabstop>
+  <tabstop>b_color_9</tabstop>
+  <tabstop>b_description_9</tabstop>
+  <tabstop>b_CC_10</tabstop>
+  <tabstop>b_channel_10</tabstop>
+  <tabstop>b_mode_10</tabstop>
+  <tabstop>b_color_10</tabstop>
+  <tabstop>b_description_10</tabstop>
+  <tabstop>b_CC_11</tabstop>
+  <tabstop>b_channel_11</tabstop>
+  <tabstop>b_mode_11</tabstop>
+  <tabstop>b_color_11</tabstop>
+  <tabstop>b_description_11</tabstop>
+  <tabstop>b_CC_12</tabstop>
+  <tabstop>b_channel_12</tabstop>
+  <tabstop>b_mode_12</tabstop>
+  <tabstop>b_color_12</tabstop>
+  <tabstop>b_description_12</tabstop>
+  <tabstop>b_CC_13</tabstop>
+  <tabstop>b_channel_13</tabstop>
+  <tabstop>b_mode_13</tabstop>
+  <tabstop>b_color_13</tabstop>
+  <tabstop>b_description_13</tabstop>
+  <tabstop>b_CC_14</tabstop>
+  <tabstop>b_channel_14</tabstop>
+  <tabstop>b_mode_14</tabstop>
+  <tabstop>b_color_14</tabstop>
+  <tabstop>b_description_14</tabstop>
+  <tabstop>b_CC_15</tabstop>
+  <tabstop>b_channel_15</tabstop>
+  <tabstop>b_mode_15</tabstop>
+  <tabstop>b_color_15</tabstop>
+  <tabstop>b_description_15</tabstop>
+  <tabstop>b_CC_16</tabstop>
+  <tabstop>b_channel_16</tabstop>
+  <tabstop>b_mode_16</tabstop>
+  <tabstop>b_color_16</tabstop>
+  <tabstop>b_description_16</tabstop>
+  <tabstop>b_CC_17</tabstop>
+  <tabstop>b_channel_17</tabstop>
+  <tabstop>b_mode_17</tabstop>
+  <tabstop>b_color_17</tabstop>
+  <tabstop>b_description_17</tabstop>
+  <tabstop>b_CC_18</tabstop>
+  <tabstop>b_channel_18</tabstop>
+  <tabstop>b_mode_18</tabstop>
+  <tabstop>b_color_18</tabstop>
+  <tabstop>b_description_18</tabstop>
+  <tabstop>b_CC_19</tabstop>
+  <tabstop>b_channel_19</tabstop>
+  <tabstop>b_mode_19</tabstop>
+  <tabstop>b_color_19</tabstop>
+  <tabstop>b_description_19</tabstop>
+  <tabstop>b_CC_20</tabstop>
+  <tabstop>b_channel_20</tabstop>
+  <tabstop>b_mode_20</tabstop>
+  <tabstop>b_color_20</tabstop>
+  <tabstop>b_description_20</tabstop>
+  <tabstop>b_CC_21</tabstop>
+  <tabstop>b_channel_21</tabstop>
+  <tabstop>b_mode_21</tabstop>
+  <tabstop>b_color_21</tabstop>
+  <tabstop>b_description_21</tabstop>
+  <tabstop>b_CC_22</tabstop>
+  <tabstop>b_channel_22</tabstop>
+  <tabstop>b_mode_22</tabstop>
+  <tabstop>b_color_22</tabstop>
+  <tabstop>b_description_22</tabstop>
+  <tabstop>b_CC_23</tabstop>
+  <tabstop>b_channel_23</tabstop>
+  <tabstop>b_mode_23</tabstop>
+  <tabstop>b_color_23</tabstop>
+  <tabstop>b_description_23</tabstop>
+  <tabstop>b_CC_24</tabstop>
+  <tabstop>b_channel_24</tabstop>
+  <tabstop>b_mode_24</tabstop>
+  <tabstop>b_color_24</tabstop>
+  <tabstop>b_description_24</tabstop>
+  <tabstop>b_CC_25</tabstop>
+  <tabstop>b_channel_25</tabstop>
+  <tabstop>b_mode_25</tabstop>
+  <tabstop>b_color_25</tabstop>
+  <tabstop>b_description_25</tabstop>
+  <tabstop>b_CC_26</tabstop>
+  <tabstop>b_channel_26</tabstop>
+  <tabstop>b_mode_26</tabstop>
+  <tabstop>b_color_26</tabstop>
+  <tabstop>b_description_26</tabstop>
+  <tabstop>b_CC_27</tabstop>
+  <tabstop>b_channel_27</tabstop>
+  <tabstop>b_mode_27</tabstop>
+  <tabstop>b_color_27</tabstop>
+  <tabstop>b_description_27</tabstop>
+  <tabstop>b_CC_28</tabstop>
+  <tabstop>b_channel_28</tabstop>
+  <tabstop>b_mode_28</tabstop>
+  <tabstop>b_color_28</tabstop>
+  <tabstop>b_description_28</tabstop>
+  <tabstop>b_CC_29</tabstop>
+  <tabstop>b_channel_29</tabstop>
+  <tabstop>b_mode_29</tabstop>
+  <tabstop>b_color_29</tabstop>
+  <tabstop>b_description_29</tabstop>
+  <tabstop>b_CC_30</tabstop>
+  <tabstop>b_channel_30</tabstop>
+  <tabstop>b_mode_30</tabstop>
+  <tabstop>b_color_30</tabstop>
+  <tabstop>b_description_30</tabstop>
+  <tabstop>b_CC_31</tabstop>
+  <tabstop>b_channel_31</tabstop>
+  <tabstop>b_mode_31</tabstop>
+  <tabstop>b_color_31</tabstop>
+  <tabstop>b_description_31</tabstop>
+  <tabstop>b_CC_32</tabstop>
+  <tabstop>b_channel_32</tabstop>
+  <tabstop>b_mode_32</tabstop>
+  <tabstop>b_color_32</tabstop>
+  <tabstop>p_mode_cont_1</tabstop>
+  <tabstop>p_channel_cont_1</tabstop>
+  <tabstop>p_CC_cont_1</tabstop>
+  <tabstop>p_range_1</tabstop>
+  <tabstop>checkBox_swap_1</tabstop>
+  <tabstop>checkBox_invert_1</tabstop>
+  <tabstop>tabWidget_switch1</tabstop>
+  <tabstop>p_off_tip_1</tabstop>
+  <tabstop>p_on_tip_1</tabstop>
+  <tabstop>p_switchmode_tip_1</tabstop>
+  <tabstop>p_CC_tip_1</tabstop>
+  <tabstop>p_channel_tip_1</tabstop>
+  <tabstop>p_step_tip_1</tabstop>
+  <tabstop>p_wrap_tip_1</tabstop>
+  <tabstop>p_controlmode_tip_1</tabstop>
+  <tabstop>p_off_ring_1</tabstop>
+  <tabstop>p_on_ring_1</tabstop>
+  <tabstop>p_switchmode_ring_1</tabstop>
+  <tabstop>p_CC_ring_1</tabstop>
+  <tabstop>p_channel_ring_1</tabstop>
+  <tabstop>p_step_ring_1</tabstop>
+  <tabstop>p_wrap_ring_1</tabstop>
+  <tabstop>p_controlmode_ring_1</tabstop>
+  <tabstop>radioButton_cont_2</tabstop>
+  <tabstop>radioButton_switch_2</tabstop>
+  <tabstop>radioButton_cont_1</tabstop>
+  <tabstop>radioButton_switch_1</tabstop>
+  <tabstop>tabWidget_pedal2</tabstop>
+  <tabstop>p_mode_cont_2</tabstop>
+  <tabstop>p_channel_cont_2</tabstop>
+  <tabstop>p_CC_cont_2</tabstop>
+  <tabstop>p_range_2</tabstop>
+  <tabstop>checkBox_swap_2</tabstop>
+  <tabstop>checkBox_invert_2</tabstop>
+  <tabstop>tabWidget_switch2</tabstop>
+  <tabstop>p_off_tip_2</tabstop>
+  <tabstop>p_on_tip_2</tabstop>
+  <tabstop>p_switchmode_tip_2</tabstop>
+  <tabstop>p_CC_tip_2</tabstop>
+  <tabstop>p_channel_tip_2</tabstop>
+  <tabstop>p_step_tip_2</tabstop>
+  <tabstop>p_wrap_tip_2</tabstop>
+  <tabstop>p_controlmode_tip_2</tabstop>
+  <tabstop>p_off_ring_2</tabstop>
+  <tabstop>p_on_ring_2</tabstop>
+  <tabstop>p_switchmode_ring_2</tabstop>
+  <tabstop>p_CC_ring_2</tabstop>
+  <tabstop>p_channel_ring_2</tabstop>
+  <tabstop>p_step_ring_2</tabstop>
+  <tabstop>p_wrap_ring_2</tabstop>
+  <tabstop>p_controlmode_ring_2</tabstop>
+  <tabstop>p_ScreenCC</tabstop>
+  <tabstop>color_sliders</tabstop>
+  <tabstop>color_CC</tabstop>
+  <tabstop>color_parameters</tabstop>
+  <tabstop>color_dividers</tabstop>
+  <tabstop>color_values</tabstop>
+  <tabstop>loadButton</tabstop>
+  <tabstop>saveButton</tabstop>
+  <tabstop>OSCButton</tabstop>
+  <tabstop>s_channel_p</tabstop>
   <tabstop>submitButton</tabstop>
   <tabstop>ExitButton</tabstop>
+  <tabstop>s_CC_w</tabstop>
+  <tabstop>s_CC_p</tabstop>
+  <tabstop>s_channel_t</tabstop>
+  <tabstop>s_range_t</tabstop>
+  <tabstop>s_minmax_p</tabstop>
+  <tabstop>s_CC_t</tabstop>
+  <tabstop>s_minmax_t</tabstop>
+  <tabstop>s_minmax_w</tabstop>
+  <tabstop>tabWidget_pedal1</tabstop>
+  <tabstop>b_description_32</tabstop>
+  <tabstop>toolButton_b_left</tabstop>
+  <tabstop>toolButton_b_right</tabstop>
+  <tabstop>s_channel_w</tabstop>
  </tabstops>
  <resources>
   <include location="qkontrol.qrc"/>
@@ -16805,8 +17584,8 @@
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>327</x>
-     <y>774</y>
+     <x>600</x>
+     <y>784</y>
     </hint>
     <hint type="destinationlabel">
      <x>189</x>
@@ -16821,12 +17600,12 @@
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>363</x>
-     <y>146</y>
+     <x>386</x>
+     <y>152</y>
     </hint>
     <hint type="destinationlabel">
-     <x>199</x>
-     <y>145</y>
+     <x>202</x>
+     <y>151</y>
     </hint>
    </hints>
   </connection>
@@ -16837,12 +17616,12 @@
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>398</x>
-     <y>432</y>
+     <x>409</x>
+     <y>372</y>
     </hint>
     <hint type="destinationlabel">
-     <x>201</x>
-     <y>431</y>
+     <x>202</x>
+     <y>371</y>
     </hint>
    </hints>
   </connection>
@@ -16853,12 +17632,12 @@
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>398</x>
-     <y>652</y>
+     <x>409</x>
+     <y>592</y>
     </hint>
     <hint type="destinationlabel">
-     <x>201</x>
-     <y>651</y>
+     <x>202</x>
+     <y>591</y>
     </hint>
    </hints>
   </connection>
@@ -16869,12 +17648,12 @@
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>407</x>
-     <y>140</y>
+     <x>430</x>
+     <y>152</y>
     </hint>
     <hint type="destinationlabel">
-     <x>542</x>
-     <y>148</y>
+     <x>565</x>
+     <y>151</y>
     </hint>
    </hints>
   </connection>
@@ -16885,12 +17664,12 @@
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>431</x>
-     <y>432</y>
+     <x>442</x>
+     <y>372</y>
     </hint>
     <hint type="destinationlabel">
-     <x>543</x>
-     <y>431</y>
+     <x>554</x>
+     <y>371</y>
     </hint>
    </hints>
   </connection>
@@ -16901,12 +17680,12 @@
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>431</x>
-     <y>652</y>
+     <x>442</x>
+     <y>592</y>
     </hint>
     <hint type="destinationlabel">
-     <x>543</x>
-     <y>651</y>
+     <x>554</x>
+     <y>591</y>
     </hint>
    </hints>
   </connection>
@@ -16933,12 +17712,12 @@
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>121</x>
-     <y>648</y>
+     <x>133</x>
+     <y>622</y>
     </hint>
     <hint type="destinationlabel">
-     <x>85</x>
-     <y>647</y>
+     <x>92</x>
+     <y>621</y>
     </hint>
    </hints>
   </connection>
@@ -16949,12 +17728,12 @@
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>315</x>
-     <y>648</y>
+     <x>327</x>
+     <y>622</y>
     </hint>
     <hint type="destinationlabel">
-     <x>404</x>
-     <y>647</y>
+     <x>416</x>
+     <y>621</y>
     </hint>
    </hints>
   </connection>
@@ -16965,12 +17744,12 @@
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>108</x>
-     <y>308</y>
+     <x>120</x>
+     <y>282</y>
     </hint>
     <hint type="destinationlabel">
-     <x>85</x>
-     <y>307</y>
+     <x>92</x>
+     <y>281</y>
     </hint>
    </hints>
   </connection>
@@ -16981,12 +17760,12 @@
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>315</x>
-     <y>308</y>
+     <x>327</x>
+     <y>282</y>
     </hint>
     <hint type="destinationlabel">
-     <x>404</x>
-     <y>307</y>
+     <x>416</x>
+     <y>281</y>
     </hint>
    </hints>
   </connection>
@@ -17755,6 +18534,262 @@
     <hint type="destinationlabel">
      <x>522</x>
      <y>710</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>k_off_1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>transpose_1</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>660</x>
+     <y>86</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>612</x>
+     <y>99</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>k_off_2</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>transpose_2</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>661</x>
+     <y>128</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>576</x>
+     <y>135</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>k_off_3</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>transpose_3</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>661</x>
+     <y>163</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>592</x>
+     <y>174</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>k_off_4</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>transpose_4</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>661</x>
+     <y>213</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>610</x>
+     <y>217</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>k_off_5</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>transpose_5</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>659</x>
+     <y>246</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>599</x>
+     <y>252</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>k_off_6</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>transpose_6</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>657</x>
+     <y>289</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>599</x>
+     <y>292</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>k_off_7</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>transpose_7</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>660</x>
+     <y>330</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>610</x>
+     <y>330</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>k_off_8</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>transpose_8</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>657</x>
+     <y>373</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>580</x>
+     <y>370</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>k_off_9</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>transpose_9</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>662</x>
+     <y>413</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>600</x>
+     <y>416</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>k_off_10</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>transpose_10</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>667</x>
+     <y>446</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>446</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>k_off_11</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>transpose_11</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>665</x>
+     <y>488</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>617</x>
+     <y>489</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>k_off_12</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>transpose_12</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>660</x>
+     <y>534</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>614</x>
+     <y>540</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>k_off_13</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>transpose_13</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>658</x>
+     <y>569</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>602</x>
+     <y>578</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>k_off_14</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>transpose_14</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>658</x>
+     <y>605</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>597</x>
+     <y>606</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>k_off_15</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>transpose_15</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>662</x>
+     <y>654</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>600</x>
+     <y>653</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>k_off_16</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>transpose_16</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>657</x>
+     <y>699</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>600</x>
+     <y>699</y>
     </hint>
    </hints>
   </connection>

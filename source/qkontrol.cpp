@@ -542,6 +542,7 @@ void qkontrolWindow::setKeyzones()
 {
 	QList<QSpinBox *> allKeys = tabWidget->findChildren<QSpinBox *>(QRegExp("^key_"));
 	QList<QSpinBox *> allChannels = tabWidget->findChildren<QSpinBox *>(QRegExp("^channel_"));
+	QList<QSpinBox *> allTranspositions = tabWidget->findChildren<QSpinBox *>(QRegExp("^transpose_"));
 	QList<QCheckBox *> allOff = tabWidget->findChildren<QCheckBox *>(QRegExp("^k_off_"));
 	QList<QSpinBox *> allSChannels = tabWidget->findChildren<QSpinBox *>(QRegExp("^s_channel_"));
 	QList<QSpinBox *> allSControls = tabWidget->findChildren<QSpinBox *>(QRegExp("^s_CC_"));
@@ -555,7 +556,7 @@ void qkontrolWindow::setKeyzones()
 	for(int i=0;i<=15;i++)
 		{
 		mapping.append(allKeys[i]->value());
-		mapping.append(QByteArray::fromHex("00"));
+		mapping.append(allTranspositions[i]->value());
 		mapping.append(allChannels[i]->value()-1);
 		if(allOff[i]->isChecked())
 			mapping.append(QByteArray::fromHex("83")); // off
